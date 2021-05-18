@@ -1,0 +1,12 @@
+## Rodar atualizando
+dotnet watch run
+
+## Gerador de MVC automático
+dotnet aspnet-codegenerator controller -name MoviesController -m Movie -dc MvcMovieContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
+
+## Criando migração
+dotnet ef migrations add CriandoBanco
+
+## Rodando migração
+dotnet ef database update
